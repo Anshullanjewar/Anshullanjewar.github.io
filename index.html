@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="mediaqueries.css" />
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    </head>
+    <body>
+        
+        <!-- <div class="containerr">
+        <div class="intro">
+            <?xml version="1.0" standalone="no"?>
+            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+            "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+            width="500.000000pt" height="500.000000pt" viewBox="0 0 1417.000000 1417.000000"
+            preserveAspectRatio="xMidYMid meet">
+
+            <g transform="translate(0.000000,1417.000000) scale(0.100000,-0.100000)"
+            fill="#000000" stroke="none">
+            <path d="M6094 10183 c-9 -10 -597 -983 -1306 -2163 -709 -1180 -1584 -2634
+            -1944 -3232 l-654 -1088 505 0 504 0 360 718 360 717 453 163 c249 89 518 184
+            598 211 279 94 524 190 907 355 123 53 225 96 228 96 3 0 5 -497 5 -1105 l0
+            -1105 683 0 c556 0 1702 -11 3505 -33 111 -1 195 1 185 5 -10 5 -760 204
+            -1668 443 -907 240 -1676 443 -1707 452 l-58 16 0 884 0 885 363 177 c589 290
+            1424 720 2187 1129 377 202 586 317 560 309 -8 -2 -709 -236 -1557 -521 -848
+            -284 -1544 -516 -1547 -516 -3 0 -6 725 -6 1610 l0 1610 -470 0 c-435 0 -471
+            -1 -486 -17z m16 -2117 c0 -1103 -3 -1396 -12 -1403 -7 -6 -386 -135 -843
+            -288 -456 -153 -836 -281 -843 -283 -15 -5 -9 8 965 1946 393 782 719 1422
+            724 1422 5 0 9 -550 9 -1394z"/>
+            </g>
+            </svg>
+        </div>
+        </div> -->
+
+        
+
+
+        <nav id="desktop-nav">
+            <div class="logo">Anshul Lanjewar</div>
+            <div>
+                <ul class = "nav-links">
+                    <li><a href="#about" style="--i:1"class="active">About</a></li>
+                    <li><a href="#experience" style="--i:2"class="active">Skills</a></li>
+                    <li><a href="#projects" style="--i:3"class="active">Project</a></li>
+                    <li><a href="#contact" style="--i:4"class="active">Contact</a></li>
+                </ul>
+            </div>   
+        </nav>
+        <nav id="hamburger-nav">
+            <div class ="logo">Anshul Lanjewar</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+
+<!-- SECTION PROFILE -->
+        <section id="profile">
+            <div class="section_pic-container">
+                <img src="./assets/file.png" alt="Anshul profile picture"> 
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hi, Myself</p>
+                <h1 class="title">Anshul Lanjewar</h1>
+                <h3> And I'm <span class="text"></h3></span>
+                
+                <div id="socials-container">
+                    <a href="#" style="--i:5" class="active">
+                    <img src="./assets/linkedindwn.png" alt="My linkedin profile" 
+                    class="icon" onclick="location.href='https://www.linkedin.com/in/anshul-lanjewar/'"></a>
+                    <a href="#" style="--i:6" class="active">
+                    <img src="./assets/github-logo-24.png" alt="My github profile"
+                    class="icon" onclick="location.href='https://github.com/Anshullanjewar'"></a>
+                </div>
+
+                <div class="btn-container">
+                    <a href="#" style="--i:7" class="active">    
+                    <button class="btn btn-color-2" onclick="window.open('./assets/updated_Resume.pdf')">Download Resume</button></a>
+                    <a href="#" style="--i:8" class="active">
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button></a>
+                </div>
+                
+            </div>
+        </section>
+  
+<!-- SECTION ABOUT -->
+        <section id="about">
+            <p class="about_section__text__p1">Get To Know More</p>
+            <h1 class="about_title">About Me</h1>
+            <div class="about_section-container">
+            <div class="about_section__pic-container">
+                <img src="./assets/profile_pic_l.png" alt="Profile picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="about__details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>9+ Months <br>Software Developer</p>
+                    </div>
+                    <div class="about__details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>Bachelors of Technology <br>2019-2023</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Experienced in Java, Kotlin, Android, SQL, and Unreal Engine with a strong foundation in data structures and algorithms. Open to new challenges in software development!                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+        </section>
+
+<!-- SECTION EXPERIENCE -->
+        <section id="experience">
+            <p class="experience_section__text__p1">Explore My</p>
+            <h1 class="experience_title">Skills</h1>
+            <div class="experience-details-container">
+                <div class="experience-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title"Software Developer></h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="assets/checkmark.png" alt="Experience.icon" class="icon" />
+                                <div> 
+                                    <h3>Java</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/checkmark.png" alt="Experience.icon" class="icon" />
+                                <div> 
+                                    <h3>Kotlin</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/checkmark.png" alt="Experience.icon" class="icon" />
+                                <div> 
+                                    <h3>C++</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/checkmark.png" alt="Experience.icon" class="icon" />
+                                <div> 
+                                    <h3>XML</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/checkmark.png" alt="Experience.icon" class="icon" />
+                                <div> 
+                                    <h3>HTML</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/checkmark.png" alt="Experience.icon" class="icon" />
+                                <div> 
+                                    <h3>CSS</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <!-- <article>
+                                <img src="assets/checkmark.png" alt="Experience.icon" class="icon" />
+                                <div> 
+                                    <h3>Javascript</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article> -->
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title"Software Developer></h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="assets/checkmark.png" alt="Experience.icon" class="icon" />
+                                <div> 
+                                    <h3>DSA</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/checkmark.png" alt="Experience.icon" class="icon" />
+                                <div> 
+                                    <h3>OOPs</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/checkmark.png" alt="Experience.icon" class="icon" />
+                                <div> 
+                                    <h3>Android</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/checkmark.png" alt="Experience.icon" class="icon" />
+                                <div> 
+                                    <h3>SQL</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/checkmark.png" alt="Experience.icon" class="icon" />
+                                <div> 
+                                    <h3>Unreal Engine</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="assets/checkmark.png" alt="Experience.icon" class="icon" />
+                                <div> 
+                                    <h3>Architectures</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+        </section>
+
+<!-- SECTION PROJECTS -->
+        <section id="projects">
+            <p class="project_section__text__p1">Browse My Recent</p>
+            <h1 class="project_title">Projects</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                    <img src="./assets/1.png" alt="Project 1" class="project-img"/>   
+                </div>
+                <h2 class="experience-sub-title project-title">GuidEd App</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 prroject-btn" onclick="location.href='https://github.com/Anshullanjewar/Guided_App'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 prroject-btn" onclick="location.href='https://github.com/Anshullanjewar/Guided_App'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/2.png" alt="Project 2" class="project-img"/>   
+                </div>
+                <h2 class="experience-sub-title project-title">Sunshine App</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 prroject-btn" onclick="location.href='https://github.com/Anshullanjewar/Sunshine'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 prroject-btn" onclick="location.href='https://github.com/Anshullanjewar/Sunshine'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/3.png" alt="Project 3" class="project-img"/>   
+                </div>
+                <h2 class="experience-sub-title project-title">Workout App</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 prroject-btn" onclick="location.href='https://github.com/Anshullanjewar/Workout_App'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 prroject-btn" onclick="location.href='https://github.com/Anshullanjewar/Workout_App'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+
+        </section>
+
+<!-- SECTION CONTACT -->
+
+    
+    
+    <section id="contact">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="b591e97d-2850-43e1-9f6e-f94bfdf51ed7">
+
+        <p class="contact_section__text__p1">Get in Touch</p>
+        <h1 class="contact_title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+           <!-- //------------------------------------- -->
+           <div class="container_toContact">
+            <div class="screen">
+              <div class="screen-header">
+                <div class="screen-header-left">                  
+                </div>
+              </div>
+              <div class="screen-body">
+                <div class="screen-body-item left">
+                  <div class="app-title">
+                    <span>CONTACT</span>
+                  </div>
+                  <div class="app-contact">CONTACT INFO : +91 7049223604</div>
+                </div>
+                <div class="screen-body-item">
+                  <div class="app-form">
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="NAME" type="text" name="name" required>
+                    </div>
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="EMAIL" type="email" name="email" required>
+                    </div>
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="CONTACT NO">
+                    </div>
+                    <div class="app-form-group message">
+                      <input class="app-form-control" placeholder="MESSAGE" name="message" required>
+                    </div>
+                    <input type="hidden" name="redirect" value="https://www.linkedin.com/in/anshul-lanjewar/">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <div class="app-form-group buttons">
+                      <button class="app-form-button">CANCEL </button>
+                      <button class="app-form-button" type="submit">SEND</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!-- //------------------------------------- -->
+        </div>
+    </form>
+    </section>
+
+
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class = "nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Skills</a></li>
+                        <li><a href="#projects">Project</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>    
+            </nav>
+            <p>Copyright &#169 2023 Anshul Lanjewar. All Rights Reverved</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
+
+<!-- <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon"/>
+            <p><a href="mailto:anshullanjewar12@gmail.com">anshullanjewar12@gmail.com</a></p>
+        </div>
+
+        <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon"/>
+            <p><a href="https://www.linkedin.com/in/anshul-lanjewar/">LinkedIn/anshul-lanjewar</a></p>
+        </div>
+    </div>
+</section> -->
+
+<!-- 
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="1417.000000pt" height="1417.000000pt" viewBox="0 0 1417.000000 1417.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,1417.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M6094 10183 c-9 -10 -597 -983 -1306 -2163 -709 -1180 -1584 -2634
+-1944 -3232 l-654 -1088 505 0 504 0 360 718 360 717 453 163 c249 89 518 184
+598 211 279 94 524 190 907 355 123 53 225 96 228 96 3 0 5 -497 5 -1105 l0
+-1105 683 0 c556 0 1702 -11 3505 -33 111 -1 195 1 185 5 -10 5 -760 204
+-1668 443 -907 240 -1676 443 -1707 452 l-58 16 0 884 0 885 363 177 c589 290
+1424 720 2187 1129 377 202 586 317 560 309 -8 -2 -709 -236 -1557 -521 -848
+-284 -1544 -516 -1547 -516 -3 0 -6 725 -6 1610 l0 1610 -470 0 c-435 0 -471
+-1 -486 -17z m16 -2117 c0 -1103 -3 -1396 -12 -1403 -7 -6 -386 -135 -843
+-288 -456 -153 -836 -281 -843 -283 -15 -5 -9 8 965 1946 393 782 719 1422
+724 1422 5 0 9 -550 9 -1394z"/>
+</g>
+</svg> -->
