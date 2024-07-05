@@ -374,6 +374,8 @@ section{
 
 #about {
     position: relative;
+      min-height: 100vh;
+
 }
 
 .about-containers {
@@ -435,8 +437,8 @@ section{
 }
 
 .about_section-container {
-    gap: 6rem;
-    height: 60%; 
+    gap: 4rem;
+    height: 80%; 
       
 }
 .about_section-container {
